@@ -1,7 +1,7 @@
 package Object;
 
 class Printing{
-    String Name;
+    MyString Name;
     int age;
     float gpa;
 
@@ -13,14 +13,14 @@ class Printing{
         age = a;
         System.out.println(age +" "+gpa);
     }
-    public void print( String k , float g){
+    public void print(MyString k , float g){
         gpa = g;
         Name = k;
         System.out.println(age +" "+gpa);
     }
 }
 public class funOverloading {
-    public static void main(String[] args){
+    public static void main(MyString[] args){
         Printing s1 = new Printing();
 
     }

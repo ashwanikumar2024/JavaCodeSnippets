@@ -1,11 +1,11 @@
 package Object;
 
 class Student1{
-    String Name;
+    MyString Name;
     int age;
     float gpa;
 
-    Student1(String n, int a, float g){
+    Student1(MyString n, int a, float g){
         System.out.println("Student obj created");
         Name = n;
         age = a;
@@ -19,7 +19,7 @@ class Student1{
     }
 }
 public class Constructor {
-    public static void main(String[] args){
+    public static void main(MyString[] args){
         Student1 s1 = new Student1("Ashwani", 20, 8.8f);
     }
 }
