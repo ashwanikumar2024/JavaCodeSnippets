@@ -1,6 +1,7 @@
 package Inheritance;
-class Animal extends Object{
+class Animal{
     String name;
+
     void sound(){
         System.out.println("Animal makes Sound");
     }

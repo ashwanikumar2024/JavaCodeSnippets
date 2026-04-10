@@ -1,28 +1,29 @@
 package NestedClass;
 
-interface Animal{
+interface Animal {
     void sound();
-    default void test(){
+
+    default void test() {
         System.out.println("The Test is of Animal.");
     }
 }
 
 public class Lambda implements Animal {
-    public void sound(){
-        System.out.println("Animal is houting");
+    public void sound() {
+        System.out.println("Animal is shouting");
     }
 }
 
-
-class Main3{
+class Main3 {
     public static void main(String[] args) {
         Animal obj = new Lambda();
         obj.sound();
 
-        Animal obj1 = ()->{
+        // Lambda implementation
+        Animal obj1 = () -> {
             System.out.println("Animal is making sound");
-
-            obj1.sound();
         };
+
+        obj1.sound();   // ✅ call here instead
     }
 }
